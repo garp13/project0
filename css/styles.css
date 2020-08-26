@@ -1,0 +1,1643 @@
+@font-face {
+    src: url(../plugins/webfonts/source-sans-pro-v13-latin-regular.woff);
+    font-family: myFirstFont;
+  }
+
+body{
+    font-family: myFirstFont;
+}
+/*--------------------------------------------------------
+INDEX
+----------------------------------------------------------*/
+/*Nav menu*/
+.navbar{
+    height: 54px;
+}
+.navbar .container-fluid{
+    position: relative;
+    font-size: 14px;
+    height: 54px;
+    color: #303030;
+    background-color: #fff;
+}   
+
+    /*Nav menu  logo*/
+    .navbar .container-fluid .navbar-header img{
+        height: 28px;
+        width: 92px;
+        margin-left: 40px;
+        margin-top: 15px;
+    }
+
+    /*Nav menu middle*/
+    .navbar .container-fluid #menu-mid{
+
+        position: relative;
+        left: 17%;
+        font-size: 13px;
+    }
+        .navbar .container-fluid #menu-mid .mnMid{
+            width:80px;
+            text-align: center;       
+            
+        }
+        .navbar .container-fluid #menu-mid .mnMid li a{
+            width:80px;
+            text-align: center;
+        }
+
+        .navbar .container-fluid #menu-mid li a{
+            height: 54px;
+        }
+        .navbar .container-fluid #menu-mid:hover li a{
+            background-color: #fff;
+            
+            
+        }
+            .navbar .container-fluid #menu-mid:hover li a:hover{
+                background-color: #e7e7e7;
+            }
+                .navbar .container-fluid #menu-mid li a .basebar{
+                    position: absolute;
+                    left: 0;
+                    bottom: 0px;
+                    width:100%;
+                    height: 4px;
+                    border-radius: 2px;
+                    background-color: #191919;
+                }
+
+
+                .navbar .container-fluid #menu-mid li a #barSell{
+                    width:0px;                   
+                }
+
+                .navbar .container-fluid #menu-mid li a #barFaq{
+                    width:0px;
+                }
+    /*Nav menu right*/
+    /*Nav menu languague*/
+    .navbar .container-fluid ul #menu-lang{
+        margin: 10px;
+ 
+    }
+        .navbar .container-fluid ul #menu-lang form select{
+            height: 30px;
+            font-size: 13px;
+            width: 135px;
+            padding: 5px;
+            outline: none;
+            border-radius: 4px;
+            border: 1px solid rgb(195, 195, 195);
+            background-color: white;
+        }
+        .navbar .container-fluid ul #menu-lang form select:focus{
+            border: 1px solid rgb(118, 118, 118);
+        }
+    /*Nav menu Login*/
+    .navbar .container-fluid ul #menu-log a{
+        color: #29224d;
+        font-size: 13px;
+        height: 54px;
+    }
+
+    .navbar .container-fluid ul #menu-log a:hover{
+        background-color: #e7e7e7;
+    }
+    /*Nav menu button Start*/
+    .navbar .container-fluid ul #menu-start{
+        background:#fa8e00;
+        border-radius:2px;
+        margin:7px 20px 7px 20px;
+
+    }
+    .navbar .container-fluid ul #menu-start a{
+        font-size: 13px;
+        width:100px;
+        text-align: center;
+        color:#fff;
+        height:35px;
+        padding:8px;
+        
+    }
+    /*Reponsive*/
+    @media only screen and (max-width: 768px){
+        
+        .navbar .container-fluid .navbar-header img{
+            margin:10px;
+        }
+        .navbar{
+            height: auto;
+        }
+        .navbar .container-fluid{
+            height: auto;
+        }
+       
+        .navbar .container-fluid #menu-mid li a{
+            height: auto;
+            font-size: 11px;
+        }
+        .navbar .container-fluid ul #menu-log a{
+            height:auto;
+        }
+        .navbar .container-fluid #menu-mid .mnMid{
+            width:100%;
+        }
+        /*banner*/
+        .navbar .container-fluid #menu-mid li a .basebar{        
+            width:0px;
+            height: 0px;   
+        }
+        .navbar .container-fluid #myNavbar{
+            padding-left: 0px;
+            max-height: 100%;
+            padding-right: 0px;
+            font-size: 11px;
+        }
+        .navbar .container-fluid #menu-mid{
+            padding: 0px;
+            position: relative;
+            left: 0px;
+            text-align: center;
+            font-size: 11px;
+            margin: 0px;
+            border-top: 1px solid gray;
+            background-color: #fff;
+            
+        }
+
+            .navbar .container-fluid #menu-mid li{              
+                border-bottom: 1px solid gray; 
+            }
+            .navbar .container-fluid #menu-mid li a p{              
+                margin-top: 20px;
+                margin-bottom: 20px;
+                
+            }
+           
+           
+            /*Nav right*/
+            .navbar .container-fluid #myNavbar .navbar-right{              
+                width: 100%;
+                padding-left: 0;
+                padding-right: 0;
+                position: relative;
+                background-color: #fff;
+            }
+           
+                /*Login*/
+                .navbar .container-fluid #myNavbar .navbar-right #menu-log{
+                    box-sizing: border-box;
+                    border-radius:1px;
+                    margin:0;
+                    width: 103%;
+                    text-align: center;
+                    padding:0;
+                    background-color: #fff;
+                }
+                    .navbar .container-fluid #myNavbar .navbar-right #menu-log a{      
+                        text-align:center;
+                        border-top: 1px solid gray;
+                        border-bottom: 1px solid gray;
+                        
+                    }
+                        .navbar .container-fluid #myNavbar .navbar-right #menu-log a p{      
+                            margin-top: 20px;
+                            margin-bottom: 20px;
+                        }
+                /*Language*/
+        
+                
+                    .navbar .container-fluid ul #menu-lang form select{    
+                             
+                        width: 95%;
+                        height: 20px;
+                        font-size: 8px;
+                        padding:0px 0px 0px 10px;
+                    }
+                    .navbar .container-fluid ul #menu-lang form{
+                        margin-left: 40px;
+                       
+                    }
+                /*StartSelling*/
+                .navbar .container-fluid ul #menu-start{
+                    
+                    background:#fa8e00;
+                    border-radius:2px;
+                    margin:auto;
+                    height:30px;
+                    width: 300px;
+                    text-align: center;
+                    margin-top: 10px;
+                    margin-left: 14%;
+                }
+                .navbar .container-fluid ul #menu-start a{
+                    font-size: 10px;
+                    
+                    margin: auto;
+                }
+                /*icon menu responsive*/
+                #headPage .navbar .container-fluid .navbar-header button{
+                    border: none;
+                    background-color: #fff;
+                }
+                #headPage .navbar .container-fluid .navbar-header button:hover{
+                    background-color: #fff;
+                }
+                #headPage .navbar .container-fluid .navbar-header button:active{
+                    background-color: #fff;
+                }
+               
+                
+                
+            
+
+    }
+/*Super Drop*//*
+#superDrop{
+    position: relative;
+    top: 0px;
+}*/
+/* Banner */
+.banner{
+    position: relative;
+}
+    /*Banner image*/
+    .banner .bgBanner{
+        position: relative;
+        height:550px;
+        background: url(../data/bgBanner.png) no-repeat 100%/cover;
+        top: 30px;
+        
+    }
+        /*Sentences*/
+        .banner .bgBanner .container-fluid .row .col-sm-6{
+            height: 600px;
+            color: white;
+            padding:140px 0px 0px 220px;
+        }
+
+
+            .banner .bgBanner .container-fluid .row .col-sm-6 h2{
+                font-size: 38px;
+            }
+
+            .banner .bgBanner .container-fluid .row .col-sm-6 h1{
+                margin-top: -10px;
+                padding-left: 70px;
+                font-size: 75px;
+                font-weight: 700;
+            }
+
+            .banner .bgBanner .container-fluid .row .col-sm-6 h5{
+                margin-top: -10px;
+                padding-left: 120px;
+                font-size: 20px;
+            }
+
+            .banner .bgBanner .container-fluid .row .col-sm-6 #bnR{
+                margin-top: -10px;
+                padding-left: 30px;
+                font-size: 20px;
+            }
+            .banner .bgBanner .container-fluid .row .col-sm-6 p{
+                margin-top: -10px;
+                padding-left: 80px;
+                font-size: 20px;
+            }
+            .banner .bgBanner .container-fluid .row span{
+                position: absolute;
+                bottom: 0px;
+                left:43%;
+                height: 80px;
+                width: 230px;
+                background-color: white;
+            }
+            /*Open your free store now*/
+            .banner .bgBanner .container-fluid .row span a{
+                position: absolute;
+                text-align: center;
+                bottom: 0px;
+                height: 40px;
+                width: 190px;
+                background-color: #fa8e00;
+                top: 20px;
+                left: 20px;
+                border-radius:2px;
+                color: white;
+                font-size: 14px;
+                padding-top: 10px;
+                font-weight: 20;
+                text-decoration: none;
+            }
+        /*Reponsive*/
+        @media only screen and (max-width: 768px){
+           
+            .banner .bgBanner{
+                background-image: none;
+                top: 0px;
+            }
+            .banner .bgBanner .container-fluid .row .BannerAbove{
+                position: relative;
+                background: url(../data/bgLeft.jpg) no-repeat 100%/cover;
+                height:300px;
+                width: 100%;
+                padding: 70px 0px 0px 20px;
+                margin-top: 10px;
+            }
+
+            .banner .bgBanner .container-fluid .row .BannerBelow{
+                position: relative;
+                background: url(../data/bgRight.jpg) no-repeat 100%/cover;
+                height:300px;
+                width: 100%;
+                padding: 20px 200px 0px 20px;
+                margin-top: 15px;
+            }
+                .banner .bgBanner .container-fluid .row .col-sm-6 h2{
+                    font-size: 20px;
+                    padding: 0px;
+                }
+
+                .banner .bgBanner .container-fluid .row .col-sm-6 h1{
+                    margin:0px;
+                    padding:0px;
+                    font-size: 36px;
+                    font-weight: 700;
+                }
+
+                .banner .bgBanner .container-fluid .row .col-sm-6 h5{
+                    margin:0px;
+                    padding:0px;
+                    font-size: 20px;
+                }
+                .banner .bgBanner .container-fluid .row .col-sm-6 #bnR{
+                    padding: 0px;
+                    margin-top: 5px;
+                }
+                .banner .bgBanner .container-fluid .row .col-sm-6 p{
+                    margin:0px;
+                    padding:0px;
+                    font-size: 20px;
+                    padding-right: 70px;
+                }
+                /*Open your free store now bg white*/ 
+                .banner .bgBanner .container-fluid .row span{
+                    position: absolute;
+                    bottom: 0px;
+                    left:25%;
+                    top: 275px;
+                    height: 60px;
+                    width: 190px;
+                    background-color: white;
+                    margin: 0px;
+                }
+
+                    /*Open your free store now bg orange*/
+                    .banner .bgBanner .container-fluid .row span a{
+                        position: absolute;
+                        text-align: center;
+                        bottom: 0px;
+                        height: 40px;
+                        width: 160px;
+                        background-color: #fa8e00;
+                        top: 10px;
+                        left: 15px;
+                        border-radius:2px;
+                        color: white;
+                        font-size: 13px;
+                        padding-top: 10px;
+                        padding-left: 5px;
+                        padding-right: 5px;
+                        font-weight: 20;
+                        text-decoration: none;
+                    }
+                    
+
+                
+
+
+        }
+/*Benefits*/
+
+.Benefits{
+    padding-top: 130px;
+    
+    color: #303030;
+    position: relative;
+}
+   
+    .Benefits  .container{
+        margin-top: 50px;
+        position: relative;
+        margin-bottom: 40px;
+        padding: 0 7% 0 7%;
+        
+        
+    }
+        /*Title Benefits*/
+        .Benefits .row p{
+            text-align: center;
+            font-size: 25.6px;
+            font-weight: 700;
+        }
+        .Benefits .row p #brR{
+            display: none;
+        }
+        .Benefits .row p #brN{
+            display:block;
+        }
+
+        /*Bf images*/
+        .Benefits .container .row .col-xs-12{
+            position: relative;    
+        }
+            /*Image*/
+            .Benefits .container .row .col-xs-12{               
+                
+                background-repeat: no-repeat;
+                background-size: contain;
+                background-position: center center;
+                height: 70px;
+                
+                box-sizing: border-box; 
+                color: black;
+                font-size: 18px;
+                
+                font-weight: 0;
+                text-align: center; 
+                padding-top: 60px;
+        
+            }
+            
+                
+            /*Sentences */
+            .Benefits .container .row .col-sm-4 span p{
+                margin-top: 15px;
+                font-size: 15px;
+                font-weight: 10;
+                text-align: center;
+            }
+                 /*Sentences Left*/
+                .Benefits .container .row  #bfL span p{
+                    margin-left: 48%;
+                }
+                /*Sentences Right*/
+                .Benefits .container .row #bfR span p{
+                    margin-left: -160px;
+                }
+
+           
+        .Benefits .container .row .sell{
+            margin-top: 100px;
+        }
+            .Benefits .container .row .sell a{
+                
+                font-size: 13px;
+                width:100px;
+                text-align: center;
+                color:#fff;
+                
+                padding:13px;
+                
+                background-color: #fa8e00;
+                
+                border-radius:2px;
+                margin-left: 35%;
+                text-decoration: none;
+                
+            }
+
+        /*Reponsive*/
+        @media only screen and (max-width: 768px){
+            .Benefits .container .row .bfM{
+                margin-top: 100px;
+            }  
+            .Benefits .container .row .bfR{
+                margin-top: 100px;
+            }  
+            
+            .Benefits .container .row .sell a{
+                margin-left: 40%;
+            }
+            .Benefits .row p #brN{
+                display: none;
+            }
+            .Benefits .row p #brR{
+                display:block;
+            }
+
+        }
+        
+/* Selling*/
+#Selling{
+    padding-top:120px;
+    margin-left: 15px;
+    
+}
+#Selling .container-fluid{
+    margin: auto;
+}
+    #Selling .container-fluid .row{
+        text-align: center;
+        font-size: 20px;
+        margin: auto;
+       
+    }
+        #Selling .container-fluid .row h4{
+            
+            font-size: 20px;
+            font-weight: 700;
+           
+        }
+        #Selling .container-fluid .row h5{
+            margin-top:15px;
+            font-size: 18px;
+            line-height: 150%;
+
+        
+        }
+        #Selling .container-fluid .row h5 br{
+            display: none;
+        }
+        
+
+        #Selling .container-fluid .sellImg .row{
+            margin-left: -1%;
+        }
+
+        #Selling .container-fluid .sellImg .row .col-xs-6{
+            margin-top: 20px;
+            background-repeat: no-repeat;
+            box-sizing: border-box;
+            height: 76px;
+            background-size: contain;
+            background-position: center center;
+            color: white;
+            font-size: 18px;
+            
+            font-weight: 0;
+            text-align: center;
+    
+        }
+                #Selling .container-fluid .sellImg .row .col-xs-6 p{
+                    margin-top: 9%;
+                }
+    @media only screen and (max-width:768px){
+        
+        #Selling .container-fluid .sellImg{
+            margin: auto;
+        }
+        #Selling .container-fluid .sellImg .row{
+            margin-left: -3%;
+        }
+        
+        #Selling .container-fluid .sellImg .row .col-xs-6{
+            height: auto;
+            font-size: 13px;
+            
+        }
+        #Selling .container-fluid .row h5 br{
+            display: block;
+        }
+    }
+    #Selling .container-fluid #Selling-start {
+        margin-top: 70px;
+       
+    }
+        #Selling .container-fluid #Selling-start  a{
+            
+            font-size: 13px;
+            width:100px;
+            text-align: center;
+            color:#fff;
+            
+            padding:13px;
+            background-color: #fa8e00;
+            border-radius:2px;
+            margin-left: -10px;
+            
+            text-decoration: none;
+        }
+
+/*advertisements*/
+.adver .container-fluid{
+    margin-top: 100px;
+    text-align: center;
+    padding-top: 80px;
+    position: relative;
+    
+    background-color: #f0f0f0;
+   
+}
+    /* Title advertisements*/
+    .adver .container-fluid .row .col-sm-12 p{
+        font-size: 18px;
+        background-color: #fff;
+        border-radius: 19px;
+        line-height: 1.22;
+        padding: 5px 10px;      
+        box-sizing: border-box;
+        margin-bottom: 38px;
+        display: inline-block;
+        font-family: Arial, Helvetica, sans-serif;
+        
+
+    }
+    .adver .container-fluid .row .col-sm-12 br{
+        display: none;
+    }
+    .adver .container-fluid .row .col-sm-12 #p_zi{
+        display: block;
+        font-family: Arial, Helvetica, sans-serif;
+        font-weight: 700;
+        font-size: 25px;
+        margin-bottom:0;
+        background-color: #f0f0f0;
+        padding: 0;
+        border-radius: 0;
+    }
+
+    /*statistical*/
+    .adver .container-fluid .row .col-sm-4{
+        
+        margin: 50px 0px 0px 0px;
+        font-size: 16px;
+        padding: 0px;
+        
+    }
+        .adver .container-fluid .row .col-sm-4 .colL{
+            padding-left: 73%;
+           
+        }
+        
+        .adver .container-fluid .row .col-sm-4 .colR{
+            padding-right: 73%;
+           
+        }
+        .adver .container-fluid .row .col-sm-4 p strong{
+            font-size:24px;
+            
+        }
+    /*reponsive*/
+    @media only screen and (max-width: 768px){
+
+        .adver .container-fluid .row .col-sm-4 .colL{
+            padding-left: 0px;
+            
+        }
+
+        .adver .container-fluid .row .col-sm-4 .colR{
+            padding-right: 0px;
+        }
+
+        .adver .container-fluid .row .col-sm-12 br{
+            display: block;
+        }
+        .adver .container-fluid .row .col-sm-12 #p_zi{
+            font-size: 20px;
+            font-weight: 700;
+        }
+
+        
+    }
+        
+    /*Start selling*/
+    .adver .container-fluid .row .start{
+        margin-top: 50px;
+        margin-bottom: 50px;
+    }
+        .adver .container-fluid .row  .start a{
+            font-size:13px;
+            background:#fa8e00;
+            border-radius:2px;
+            color:#fff;
+           
+            padding:13px;
+            text-decoration: none;
+        }
+/*FAQ*/
+.FAQ{
+    background-color: #fff;
+    padding: 80px 50px 80px 50px;
+   
+}
+    .FAQ .container .row{
+        margin-bottom: 10px;
+        position: relative;
+    }
+        /*Title*/
+        .FAQ .container .row .col-sm-12 p{
+            text-align: center;
+            font-weight: 700;
+            font-size: 26px;
+        
+
+        }
+        /*Paragraph*/
+        .FAQ .container .row .col-sm-6{
+            position: relative;
+            padding-right: 0px;
+            font-size: 16px;
+            width: 50%;
+            line-height: 1.5;
+            padding-top: 20px;
+        }
+
+        .FAQ .container .row #FAQ_left{
+            padding-left: 15%;
+        }
+        .FAQ .container .row .col-sm-6 p #brR{
+            display: none;
+        }
+        .FAQ .container .row .col-sm-6 p #brN{
+            display: block;
+        }
+        /*Reponsive*/
+        @media only screen and (max-width: 768px){
+            
+            .FAQ .container .row .col-sm-6{
+                position: relative;
+                width: 100%;
+                font-size: 14px;
+                padding-left: 0px;
+                margin-right: -20px;
+                
+                
+            }
+            .FAQ .container .row .col-sm-6 p{
+                margin-left: 10px;
+                margin-right: -20px;
+                margin-top: -10px;
+            }
+            .FAQ .container .row #FAQ_left{
+                padding-left: 0px;
+            }
+            .FAQ .container .row .col-sm-12 p{
+                margin-left: -55px;
+                margin-right: -50px;
+                font-size: 22px;
+            }
+            .FAQ .container .row .col-sm-6 p #brR{
+                display: block;
+            }
+            .FAQ .container .row .col-sm-6 p #brN{
+                display: none;
+            }
+        }
+       
+
+/*Filter*/
+#filter{
+    
+    background-color: #f0f0f0;
+    padding-top: 20px;
+    
+    font-size: 13px;
+    line-height: 23px;
+}
+    
+    /*icon filter left*/
+    #filter .container-fluid .row .col-sm-3 img{
+        height: 32px;
+        padding-left: 75%;
+        position: relative;
+        width: auto;
+        
+    }
+    #filter .container-fluid .row .col-sm-3 #fbr{
+        display: none;
+    }
+    /*filter Left*/
+    #filter .container-fluid .row .col-sm-3 p{
+        margin-left: 5px;
+        
+    }
+    /*Reponsive*/
+    @media only screen and (max-width: 768px){
+        #filter .container-fluid .row .col-xs-6 img{
+            padding-left: 35%;
+        }
+
+        #filter .container-fluid .row .col-xs-12{
+            padding: 0px 40px 0px 50px;
+        }
+        #filter .container-fluid .row .col-sm-3 #fbr{
+            display: block;
+        }
+        #filter .container-fluid .row .col-sm-6 #fbr1{
+            display:none;
+        }
+    }
+
+
+/*Login*/
+/*Body login*/
+#login{
+    
+    margin: 0;
+    background-color: #f2f2f2;
+    font-size: 14px;
+}
+/*Menu*/
+#login #menu .row{
+    height: 72px;
+    background-color: #fff;
+    padding: 17px 72px;
+}
+#login #menu .row .col-xs-4{
+    padding-left:0px;
+    padding-top: 0px;
+}
+    #login #menu .row .col-xs-4 img{
+        height:auto;
+        margin-top: 3px;
+    }
+
+    #login #menu .row .col-xs-3 p{
+        
+        margin-top: 2px;
+        color: #333;
+        line-height: 1.14;
+        text-align: right;    
+        padding-top: 6px;
+        font-size:14px;
+        font-weight: 400;
+        margin-top:5px;
+        margin-right: -6px;
+    }
+    #login #menu .row .col-xs-1{
+        padding-top: 2px;
+        padding-left: 30px;
+        margin-left: 0px;
+    }
+    #login #menu .row .col-xs-1 a p{
+        
+        box-sizing: border-box;
+        height: 34px;
+        width: 85px;
+        background-color: #fa8e00;
+        border: 1px solid #fa8e00;
+        text-decoration: none;
+        font-size: 14px;
+        font-weight: 600;
+        border-radius: 2px;
+        color: #fff;
+        text-align: center;
+        padding-top: 6px;
+    }
+
+    #login #menu .row .col-xs-1 a:hover{
+        text-decoration: none;
+    }
+/*Board*/
+#login #board .row {
+    text-align: center;
+    min-height: 550px;
+    margin:0px;
+    line-height: 1.14;
+}
+    #login #board .row .head{
+        
+        font-size: 24px;
+        font-weight: 600;
+        color: #333;
+        margin-top: 24px;
+    }
+    #login #board .row .head2{
+        
+        margin-bottom: 24px;
+        font-size: 14px;
+    }
+    #login #board .row p a{
+        color: #3d158c;
+        cursor: pointer;
+    }
+        #login #board .row p a:hover{
+            text-decoration: none;
+        }
+
+    #login #board .row .table{
+        background-color: #fff;
+        border-radius: 2px;
+        max-width: 500px;
+        box-sizing: border-box;
+        margin: 20px auto;
+        padding: 32px;
+        text-align: left;
+        width: 100%;
+    }
+            /*Input Email,Pass*/
+            #login #board .row .table form input[type=text],input[type=password]{
+                padding: 25px 8px 5px;
+                display: block;
+                width: 100%;    
+                height: 44px;
+                border: 1px solid #e6e6e6;
+                border-radius: 1px;
+                background-color: #fafafa;
+                box-sizing: border-box;
+                margin-bottom: 10px;
+                box-shadow: none;
+                
+                
+            }
+            
+            /*Input Email,Pass*/
+            /*invalid*/
+            #login #board .row .table form .input_anime p{
+                margin-top:-12px;
+                margin-bottom:15px;
+                font-size: 12px;
+                color: #e6420b;
+                display: none;
+               }
+
+               #login #board .row .table form .input_anime{
+                position: relative;
+            }
+            #login #board .row .table form .input_anime{
+             position: relative;
+             }
+             #login #board .row .table .input_anime label{
+                 position: absolute;
+                 box-sizing: border-box;
+                 color: #999;
+                 font-size: 14px;
+                 font-weight: 400;
+                 left: 10px;
+                 pointer-events: none;
+                 position: absolute;
+                 top: 15px;
+                 cursor: default;
+             }
+             
+         
+         
+             #login #board .row .table form .input_anime input[type=text],input[type=password]{
+                 font-size: 14px;
+                 padding: 20px 8px 5px;
+                 box-shadow: none;
+                 width: 100%;
+                 height: 44px;
+                 border: 1px solid #e6e6e6;
+                 border-radius: 1px;
+                 background-color: #fafafa;
+                 box-sizing: border-box;
+                 margin-bottom: 15px;
+                 outline: none;
+                 transition: all 0.3s;
+             }
+             
+             #login #board .row .table form button{
+                width: 100%;
+                padding: 8px 18px;
+                font-size: 16px;
+                background-color: #fa8e00;
+                border: 1px solid #fa8e00;
+                color: #fff;
+                outline: none;
+                font-family: Arial, Helvetica, sans-serif;
+
+            }
+         
+            #login #board .row .table form .input_anime p{
+             margin-top:-12px;
+             margin-bottom:15px;
+             font-size: 12px;
+             color: #e6420b;
+             display: none;
+            }
+            #login #board .row .table form .input_anime input:focus{
+             border: 1px solid rgb(158, 138, 197);
+           }
+           #login #board .row .table form label{
+             color: #999;
+             margin-bottom: 12px;
+             font-weight: 100;
+             transition: all 0.3s;
+           }
+           #login #board .row .table form input[type=checkbox]{
+               margin-left: 5px;
+           }
+         
+           #login #board .row .table form .input_anime input:focus + label{
+             font-size: 12px;
+             -moz-transform: translateY(-10px);
+             -ms-transform: translateY(-10px);
+             -webkit-transform: translateY(-10px);
+             transform: translateY(-10px);
+         
+           }
+           #login #board .row .table form .input_anime input:valid + label{
+             font-size: 12px;
+             -moz-transform: translateY(-10px);
+             -ms-transform: translateY(-10px);
+             -webkit-transform: translateY(-10px);
+             transform: translateY(-10px);
+           
+           }
+            /*button Login Securely*/
+        #login #board .row .table button{
+            cursor: pointer;
+            display: inline-block;
+            text-align: center;
+            vertical-align: top;
+            border-radius: 2px;
+            font-weight: 600;
+            color: #fff;
+            background-color: #fa8e00;
+            border: 1px solid #fa8e00;
+            text-decoration: none;
+            text-transform: capitalize;
+            width: 100%;
+            padding: 8px 18px;
+            
+        }
+        /*Forgot pass*/
+        #login #board .row .table a{
+            color: #333;
+            text-decoration: none;
+        }
+        /*line*/
+        #login #board .row .table hr{
+            border: 1px solid #e6e6e6;
+            border-bottom: 0;
+            margin: 18px 0 20px;
+        }
+        /*Facebook*/
+        #login #board .row .table .btFB{
+            background-color: #3e5ba3;
+            border-color: #3e5ba3;
+            outline: none;
+            font-size: 16px;
+            font-weight: 600;
+           
+        }
+        #login #board .row .table .Create{
+            text-decoration: underline;
+            font-weight: 600;
+            line-height: 1.14;
+            cursor: pointer;
+        }
+        /* filter*/
+        #login #board .row .filter{
+            max-width: 500px;
+            text-align: center;
+            margin: auto;
+            padding: 32px;
+            width: 100%;
+
+        }
+        #login #board .row .filter .col-xs-4{
+            margin: 0px;
+            padding: 0px;         
+        }
+        /*need help*/
+        #login #board .row .filter .need p{
+
+            color: grey; 
+        }
+        /*line vertical*/
+        #login #board .row .filter .mid{       
+            border-left: 1px solid #d3d3d3; 
+            border-right: 1px solid #d3d3d3;  
+        }
+        /**/
+        #login #board .row .filter .col-xs-4 p{
+            display: inline;        
+        }
+
+        #login #board .row .filter .col-xs-4 a{
+            color: #3d158c;
+            font-size: 10px;
+            text-decoration: underline;        
+        }
+        /*Reponsive*/
+        @media only screen and (max-width: 768px){
+            #login #menu .row .col-xs-3{
+                display:none;
+            }
+            #login #menu .row .col-xs-4 img{
+                margin-left:-65px;
+            }
+            #login #menu .row .col-xs-1 a{
+                position: absolute;
+                left: 50px;
+            }
+            
+        }
+/*Register*//*1*/
+#register{
+    
+    margin: 0;
+    background-color: #f2f2f2;
+    font-size: 14px;
+}
+/*Menu*/
+#register .container-fluid .row{
+    height: 72px;
+    background-color: #fff;
+    padding: 17px 72px;
+}
+/*logo*/
+    #register #menu .row .col-xs-4 img{
+        height:auto;
+        margin-top: 3px;
+        margin-left: -15px;
+    }
+/*Seller Type, Contact, Store, Terms*/
+#register #menu .row .col-xs-4{
+   margin: 0;
+}
+#register #menu .row #menu-mid{
+    padding-left: 20px;
+}
+#register #menu .row .col-xs-4 .col-xs-2{
+    text-align: center;
+    cursor: pointer;
+    opacity: 0.5;
+    padding:0;
+    margin:auto;
+    margin-right: 5px;
+}
+#register #menu .row .col-xs-4 .col-xs-1{
+    padding:0;
+    padding-left:6px;
+    padding-right:6px;
+    margin-right: 5px;
+}
+#register #menu .row .col-xs-4 .col-xs-2 .row1{
+    background-image: url(https://sellers.zilingo.com/assets/images/sprites/516dcba8b64aedcdd8d7827986951e04-WS-Icons-Sprite@2x.png);
+    background-repeat: no-repeat;
+    background-size: 300px 800px;
+    height: 22px;
+    width: 24px;
+    padding: 0px;
+    margin:auto;
+    padding:auto;
+    display: inline-block;
+}
+#register #menu .row .col-xs-4 #rowSeller{
+    opacity: 1;
+}
+#register #menu .row .col-xs-4 #rowSeller .row1{
+    background-position: -202px -475px;
+}
+#register #menu .row .col-xs-4 #rowContact .row1{
+    background-position: -4px -403px;
+}
+#register #menu .row .col-xs-4 #rowStore .row1{
+    background-position: -103px -403px;
+}
+#register #menu .row .col-xs-4 #rowTerms .row1{
+    background-position: -203px -403px;
+}
+#register #menu .row .col-xs-4 .col-xs-2 .row2{
+    padding: 0px;
+    margin:auto;
+    font-size: 10px;
+    font-weight: 400;
+    line-height: 1.2;
+    color: #333;
+    height: 12px;
+    width: 66px;
+    text-align: center;
+    opacity: 1;
+}
+/*line*/
+#register #menu .row .col-xs-4 .col-xs-1 span{
+    height: 1px;
+    width: 100%;
+    border-bottom: 1px solid #333;
+    display: block;
+    margin-top: 22px;
+}
+/*Already selling on Zilingo?*/
+    #register #menu .row .col-xs-3 p{
+        
+        margin-top: 2px;
+        color: #333;
+        line-height: 1.14;
+        text-align: right;    
+        padding-top: 6px;
+        font-size:14px;
+        font-weight: 400;
+        margin-top:6px;
+        margin-right: -15px;
+        
+    }
+/*Login button*/
+#register #menu .row .col-xs-1{
+    text-align: right;
+    padding:0;
+}
+    #register #menu .row .col-xs-1 a{
+        display: inline-block;
+        background-color: #fa8e00;
+        border: 1px solid #fa8e00;
+        text-decoration: none;
+        font-size: 14px;
+        font-weight: 600;
+        border-radius: 2px;
+        color: #fff;
+        text-align: center;
+        padding: 5px 18px 5px;
+        margin-top: 3px;
+        text-transform: capitalize;
+    }
+
+    #register #menu .row .col-xs-1 a:hover{
+        text-decoration: none;
+        background-color: #f0870e;
+        border: 1px solid #f0870e;
+    }
+
+
+/***********************************************************/
+/*****************board ******************/
+/******************tilte******************/
+    #register #re{
+        
+        min-height: 550px;
+    }
+    #register #re .row{
+        text-align: center;
+        margin:0px;
+        line-height: 1.14;
+        background: none;
+        margin-bottom: 25px;
+        margin-top: 10px;
+       
+    }
+        #register #re .row p{
+            font-size: 14px;
+            font-weight: 400;
+            font-style: normal;
+            font-stretch: normal;
+            color: #3b3b3b;
+        
+        }
+        #register #re .row #wel{
+            font-size: 24px;
+            font-weight: 700;
+        }
+ /*******main register*******/
+    #register #re #board{
+        padding: 27px;
+        max-width: 524px;
+        background-color: #fff;
+        width: 100%;
+        margin: auto;
+        height: auto;
+        cursor: pointer;
+
+    }
+/*set Background*/
+    #register #re #board .col-lg-6{
+        
+        background: no-repeat 100%/cover;
+        padding: 0;
+        border: 2px solid #eaeaea;
+        border-radius: 5px;
+        overflow: hidden;
+        cursor: pointer;
+        min-height: 288px;
+        position: relative;
+        max-width: 220px;
+        box-sizing: border-box;
+    }
+
+/*background Shopping*/
+    #register #re #board form .shopping{
+        background-image: url(../data/sell-on-zil-img.png);
+        margin-left: 0px;
+        /*default checked for radio*/
+        border-color: #333;
+        border-width: 2px;
+        
+    }
+/*background Trade*/
+    #register #re #board form .trade{
+        background-image: url(../data/sell-on-zam-img.png);
+        margin-left: 30px;
+    }
+    #register #re #board form .col-lg-6 .col-xs-12{
+        background-color: #f2f2f2;
+        padding: 10px;
+    }
+    #register #re #board form .col-lg-6 .mid{
+        padding: 0px 25px 0px 25px;
+    }
+    /*logo shopping, trade*/
+    #register #re #board form .col-lg-6 .mid img{
+        margin-top: 20px;
+    }
+    #register #re #board form .col-lg-6 .mid p{
+        font-size: 16px;
+        margin-top: 15px;
+        color: #3b3b3b;
+        font-weight: 400;
+        
+    }
+    #register #re #board form .col-lg-6 .col-xs-12 input[type=text]{
+         cursor: pointer;
+         
+    }
+    #register #re #board form .col-lg-6 .col-xs-12 label{
+        cursor: pointer;
+   }
+   
+   /*Next*/
+   #register #re #board form button{
+    width: 100%;
+    padding: 8px 18px;
+    font-size: 18px;
+    background-color: #fa8e00;
+    border: 1px solid #fa8e00;
+    margin-top: 30px;
+    color: #fff;
+   }
+/*Responsiveeeeeeeeeeeeeeeeeee*/
+   @media only screen and (max-width: 768px){
+       
+       /*background responsive */
+    #register #re #board form .shopping{
+        background-image: url(https://sellers.zilingo.com/assets/images/sell-on-zil-img-mob.png);
+        background-repeat: no-repeat ;
+        background-position-y: bottom;
+        background-position-x: right;
+    }
+    #register #re #board form .trade{
+        background-image: url(../images/sell-on-zam-img-mob.png);
+        background-repeat: no-repeat;
+        background-position-y: bottom;
+        background-position-x: right;
+        background-size: auto;
+        
+    
+    }
+    #register #menu .row .col-xs-3{
+        display:none;
+    }
+    #register #menu .row .col-xs-4 img{
+        margin-left:-80px;
+    }
+    #register #menu .row #menu-mid{
+        display:none;
+    }
+    #register #menu .row .col-xs-1 a{
+        white-space: nowrap;
+        position: absolute;
+        left: 140px;
+        
+    }
+/*Reponsive for board*/
+/*title*/
+
+#register #re .row{
+    text-align: left;
+    font-size: 14px;
+    font-weight: 400;
+    padding: 20px 0px 0px 20px;
+    margin:0;
+}
+
+#register #re .row #wel{
+    font-size: 20px;
+    font-weight: 600;
+}
+/*main board*/
+#register #re{
+    margin:0;
+    padding:0;
+}
+    #register #re #board{
+        width:100%;
+        margin:0;
+       
+    }
+    #register #re #board form .col-lg-6{
+        max-width: 100%;
+        min-height:200px;
+    }
+    #register #re #board form .trade{
+        margin-left: 0px;
+    }
+    #register #re #board form .col-lg-6 .mid{
+        padding:0px 42% 0px 10px;
+    }
+    #register #re #board form .col-lg-6 .mid p{
+        font-size:16px;
+    }
+    
+
+}
+
+
+
+   /*2*/
+   /*Register Personal details*/ /*register_store.html*/
+  
+   #register #re #per{
+    background-color: #fff;
+    border-radius: 2px;
+    box-sizing: border-box;
+    margin: 20px auto;
+    max-width: 500px;
+    padding: 32px;
+    text-align: left;
+    width: 100%;
+    height:auto;
+   }
+   #register #re #per form .input_anime{
+       position: relative;
+   }
+   #register #re #per form .input_anime{
+    position: relative;
+    }
+    #register #re #per form .input_anime label{
+        position: absolute;
+        box-sizing: border-box;
+        color: #999;
+        font-size: 14px;
+        font-weight: 400;
+        left: 10px;
+        pointer-events: none;
+        position: absolute;
+        top: 15px;
+        cursor: default;
+    }
+    
+
+
+    #register #re #per form .input_anime input[type=text],input[type=password]{
+        font-size: 14px;
+        padding: 20px 8px 5px;
+        box-shadow: none;
+        width: 100%;
+        height: 44px;
+        border: 1px solid #e6e6e6;
+        border-radius: 1px;
+        background-color: #fafafa;
+        box-sizing: border-box;
+        margin-bottom: 15px;
+        outline:none;
+        transition: all 0.3s;
+    }
+    
+    #register #re #per form button{
+    width: 100%;
+    padding: 8px 18px;
+    font-size: 18px;
+    background-color: #fa8e00;
+    border: 1px solid #fa8e00;
+    color: #fff;
+    outline: none;
+   }
+
+   #register #re #per form .input_anime p{
+    margin-top:-12px;
+    margin-bottom:15px;
+    font-size: 12px;
+    color: #e6420b;
+    display: none;
+   }
+   #register #re #per form .input_anime input:focus{
+       
+       border:1px solid rgb(158, 138, 197);
+    
+  }
+  #register #re #per form label{
+    color: #999;
+    margin-bottom: 12px;
+    font-weight: 100;
+    font-size: 16px;
+    transition: all 0.3s;
+  }
+  #register #re #per form input[type=checkbox]{
+      margin-left: 5px;
+  }
+
+  #register #re #per form .input_anime input:focus + label{
+    font-size: 12px;
+    -moz-transform: translateY(-10px);
+    -ms-transform: translateY(-10px);
+    -webkit-transform: translateY(-10px);
+    transform: translateY(-10px);
+
+  }
+  #register #re #per form .input_anime input:valid + label{
+    font-size: 12px;
+    -moz-transform: translateY(-10px);
+    -ms-transform: translateY(-10px);
+    -webkit-transform: translateY(-10px);
+    transform: translateY(-10px);
+  }
+  /*Reponsiveeeeeeeeeeeeeeeee*/
+
+
+  /**************************/
+
+  /*register_terms.htmllllllllllllllllllllllllllll*/
+    #register #re #terms{
+        max-width: 700px;
+        width: 100%;
+        background-color: white;
+        margin: auto;
+        padding: 12px 20px 20px;
+        min-height: 500px;
+    }
+    #register #re #terms label{
+        margin-top: 5px;
+        font-size: 16px;
+    }
+    #register #re #terms .view a{
+        cursor: pointer;
+        font-size: 14px;
+        text-decoration: none;
+        color: #3d158c;
+        text-transform: uppercase;
+    }
+    #register #re #terms .view a span{
+        display: inline-block;
+        background-image: url(https://sellers.zilingo.com/assets/images/sprites/516dcba8b64aedcdd8d7827986951e04-WS-Icons-Sprite@2x.png);
+        background-repeat: no-repeat;
+        background-size: 300px 800px;
+        background-position: 0 -484px;
+        height: 14px;
+        width: 18px;
+    }
+    #register #re #terms .view embed{
+        position: relative;
+    }
+    #register #re #terms hr{
+        display: block;
+        unicode-bidi: isolate;
+        margin-block-start: 0.5em;
+        margin-block-end: 0.5em;
+        margin-inline-start: auto;
+        margin-inline-end: auto;
+        overflow: hidden;
+        border-style: inset;
+        border-width: 1px;
+        border-top: 1px solid #e6e6e6;
+    }
+    #register #re #terms .decision{
+        margin-top: 40px;
+    }
+    #register #re #terms .decision .col-xs-6{
+        padding:0;
+    }
+    #register #re #terms .decision #de_left{
+        text-align: right;
+        padding-right: 6px;
+        
+    }
+    #register #re #terms .decision #de_right{
+        text-align: left;
+        padding-left:6px;
+        
+        
+    }
+    #register #re #terms .decision .col-xs-6 a{
+        font-weight: 600;
+        font-size: 14px;
+        width: 170px;
+        height:50px;
+        background-color: red;
+        padding: 14px 62px;
+        background-color: #fafafc;
+        border: 1px solid #e1e1e6;
+        text-decoration: none;
+        border-radius: 2px;
+    }
+    #register #re #terms .decision #de_right a{
+        background-color: #fa8e00;
+        color: white;
+        border: 1px solid #fa8e00;
+    }
+
+    #register #re #terms .decision #de_left a{
+        color: black;
+    }
+    #register #re #terms .decision #de_left a:hover{
+        border: 1px solid rgb(158, 138, 197);
+    }
+    #register #re #terms .decision #de_right a:hover{
+        background-color: #f0870e;
+        border: 1px solid #f0870e;
+    }
+    @media only screen and (max-width: 768px){
+        #register #re #terms {
+            margin-top: 30px;
+            min-height: 500px;
+        }
+        #register #re #terms .view{
+            text-align: center;
+        }
+        #register #re #terms label{
+            padding: 10px;
+            text-align: center;
+        }
+    }

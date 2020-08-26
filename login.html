@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <!--title name-->
+  <title>Zilingo Seller Center</title>
+  <!--Logo title-->
+  <link rel="shortcut icon" type="image/png" href="./images/title_new.png"/>
+
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="plugins/bootstrap/bootstrap.min.css">
+  <!--CSS-->
+  <link rel="stylesheet" href="css/styles.css">
+
+</head>
+<body id="login">
+
+    <!--Menu-->
+    <div class="container-fluid" id="menu">
+      <div class=row>
+        <!--Logo menu-->
+        <div class="col-xs-4">
+            <a href="https://sellers.zilingo.com/">            
+                    <img src="https://sellers.zilingo.com/assets/images/icons/c1e236430622f34f4d9d267e54b5f4a6-2-zilingo-seller-logo.svg" alt="Logo">     
+            </a>
+        </div>
+
+
+        <div class="col-xs-4">
+
+        </div>
+
+        <!-- Menu right-->
+        <!--don't have account?-->
+        <div class="col-xs-3">
+          <p>
+              Don't have a Zilingo account?
+          </p>
+        </div>
+        
+        <!--Sign up-->
+        <div class="col-xs-1">
+          <a href="https://sellers.zilingo.com/onboarding/seller/type">
+            <p>Sign up</p>
+          </a>
+
+        </div>
+      </div>
+    </div>
+
+    <!--Board-->
+    <div class="container-fluid" id="board">
+      <div class="row">
+        <!--head login-->
+        <p class="head">Log in to Zilingo Seller Centre</p>
+        <p class="head2">To access your dashboard and manage orders</p>
+        <!--Language-->
+        <p>
+          <a href="#">Eng </a>|
+          <a href="#"> ไทย </a>| 
+          <a href="#">Bahasa </a> |
+          <a href="#"> 简体中文 </a>|
+          <a href="#"> 繁體中文 </a>| 
+          <a href="#">한국어 </a>
+        </p>
+        <!--form login-->
+        <div class="table">
+          <form name="logForm" action="">
+            <div class="input_anime">
+              <input type="text" id="email" name="email" required>
+              <label>Email Address</label>
+              <p id="pEmailInvalid">Invalid Email ID</p>
+            </div>
+
+            <div class="input_anime">
+              <input type="password" id="pass" name="pass" required>
+              <label>Password</label>
+              <p id="passIn">Invalid Password</p>
+            </div>
+
+            <button type="submit" value="Submit" onclick="return check_login()">
+              Log In Securely
+            </button>
+          </form>
+            
+            <br><br>
+            <a href="https://sellers.zilingo.com/login">Forgot Password?</a>
+            <!--line-->
+            <hr>
+            <!--Login with FB-->
+            <button type="button" id="login-submit" class="btFB">Log In With Facebook</button>
+            <!--line-->
+            <hr>
+            <p>Don’t have a Zilingo Sellers Account?</p>
+            <a href="https://sellers.zilingo.com/onboarding/seller/type" class="Create">CREATE NEW ACCOUNT</a>
+        </div>
+        
+        <!--Filter-->
+        <div class="filter">
+          <div class="col-xs-4 need">
+            <p>NEED HELP?</p>
+          </div>
+          <div class="col-xs-4 mid">
+            <a href="#"> <p>seller.sg@zilingo.com </p></a>
+          </div>
+          <div class="col-xs-4">
+            <a href="#"><p>+65 3138 6863 </p></a>
+          </div>
+          
+        </div>
+        
+      
+      </div>
+
+      
+    </div>
+
+
+
+  <!--Jquery,js-->
+    <script type="text/javascript" src="plugins/jquery/jquery.min.js"></script>
+    <script type="text/javascript" src="plugins/bootstrap/bootstrap.min.js"></script>
+    
+    <script src="js/main.js"></script>
+
+</body>
+</html>

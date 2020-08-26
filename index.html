@@ -1,0 +1,466 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    
+    <!--title name-->
+    <title>Zilingo Seller Center</title>
+    <!--Logo title-->
+    <link rel="shortcut icon" type="image/png" href="./images/title_new.png"/>
+    <!-- Bootstrap CSS -->  
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <!--CSS-->
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body id="headPage"><!-- onmouseover="check_onmouseover()"--> 
+    <nav class="navbar navbar-default navbar-fixed-top position-relative" id="navbar0">
+        <!--Menu-->
+        <div class="container-fluid">
+            <!--Logo menu-->
+            <div class="navbar-header">
+                <a href="#">
+                        <img src="images/2-zilingo-seller-logo.svg" alt="Logo">
+                </a>
+                <!--reponsive menu-->
+				<a href="#headPage">
+					
+                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar" onclick="dropfixed()"><!--onclick="check_spD()"-->
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span> 
+                    </button>
+				</a>
+                
+            </div>
+
+            <!--Collapse-->
+           
+            <div class="collapse navbar-collapse" id="myNavbar">
+                <!--Menu middle-->
+                <ul class="nav navbar-nav" id ="menu-mid">
+                    <li class="mnMid">
+                        <a href="#Benefits">
+                            <p>Benefits</p>
+                            <span class="basebar" id="barBen"></span>
+                        </a>
+                    </li>
+
+                    <li class="mnMid">
+                        <a href="#Selling">
+                            <p>Selling</p>
+                            <span class="basebar" id="barSell"></span>
+                        </a>
+                    </li>
+                    <li class="mnMid">
+                        <a href="#FAQ">
+                            <p>FAQ</p>
+                            <span class="basebar" id="barFaq"></span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://zilingoshopping.com">
+                            <p>zillingoshopping.com</p>
+                            
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://zilingotrade.com/">
+                            <p>zillingotrade.com</p>
+                            
+                        </a>
+                    </li>
+                </ul>
+
+                <!-- Menu right-->
+                <ul class="nav navbar-nav navbar-right">
+                    <!--Languague-->
+                    <li id="menu-lang">
+                        <form>
+                            <select name="Languages" data-value="en">
+                                <option value="en">English</option>
+                                <option value="th">ไทย</option>
+                                <option value="bi">Bahasa Indonesia</option>
+                                <option value="zh-Hans">简体中文</option>
+                                <option value="zh-Hant">繁體中文</option>
+                                <option value="kr">한국어</option>
+                            </select>
+                        </form>
+                    </li>
+                    <!--Login-->
+                    <li id="menu-log">
+                        <a href="#"><p>Log In</p></a>
+                    </li>
+                    <!--Start Selling-->
+                    <li id="menu-start">
+                        <a href="https://sellers.zilingo.com/onboarding/seller/type">
+                            <b>Start Selling</b>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <!--endCollapse-->
+        </div>
+    </nav> 
+<div><!--id="superDrop"-->
+    <!--Banner-->
+    <div class="banner">
+        <!--Banner Background image-->
+        <div class="bgBanner">
+            <!--Banner-->
+            <div class="container-fluid">
+                <!--Sentences-->
+                <div class="row">
+                    <!--Sentences Left-->
+                    <div class="col-sm-6 col-xs-12 BannerAbove" id="bgBanner">
+                        <h2><strong>Zilingo</strong></h2>
+                        <h1>Shopping</h1>
+                        <h5>Sell to customers on<br>
+                        zilingoshopping.com</h5>
+                    </div>
+                    <!--Sentences Right-->
+                    <div class="col-sm-6 col-xs-12 BannerBelow">
+                        <h2><strong>Zilingo</strong></h2>
+                        <h1>Trade</h1>
+                        <h5  id="bnR">Sell in bulk to businesses on</h5>
+                            <p>zilingotrade.com (B2B)</p>
+                    </div>
+                </div>
+                
+                <!---->
+                <div class="row">
+                    <span>
+                        <a href="https://sellers.zilingo.com/onboarding/seller/type">
+                            <b>Open your free store now!</b>
+                        </a>
+                    </span>
+                </div>
+
+            </div>
+        </div>
+       
+    </div>
+
+    <div class="Benefits" id ="Benefits">
+        <div class="container-fluid">
+            <!--Title Benifits-->
+            <div class="row">
+                <p>Zilingo is a fashion and<br id="brR"> lifestyle marketplace selling<br id="brR"> products from Southeast<br id="brR"> Asia <br id="brN">and China</p>
+            </div>
+        </div>
+
+        <div class="container">
+            <!--ICON Benefits -->
+            <div class="row">
+
+                <div class="col-sm-4 col-xs-12 bfL" style="background-image: url(./data/bfLeft.png);">
+                    <span><p><strong>Built for fashion</strong><br>
+                        Join a fashion-focused site</p></span>
+                    
+                </div>
+
+                <div class="col-sm-4 col-xs-12 bfM" style="background-image: url(./data/bfMid.png);">
+                    <span><p><strong>More than a marketplace</strong><br>
+                        Loans, photography, marketing - we have<br>
+                        you covered</p></span>
+                    
+                </div>
+
+                <div class="col-sm-4 col-xs-12 bfR" style="background-image: url(./data/bfRight.png);">
+                    
+                    <span><p><strong>Free registration</strong><br>
+                        No listing fees, start selling right away at<br>
+                        no cost</p></span>
+                </div>
+            </div>
+            <div class="row">
+
+                <div class="col-sm-4">
+                    
+                    
+                </div>
+
+                <div class="col-sm-4 sell">
+                    
+                    <a href="https://sellers.zilingo.com/onboarding/seller/type">
+                        <b>Start Selling</b>
+                    </a>
+                    
+                </div>
+
+                <div class="col-sm-4">
+                
+                </div>
+            </div>
+        </div> 
+    </div>
+    <!-- Selling-->
+    <div id="Selling">
+        <div class="container-fluid">
+            <div class="row">
+                
+                    <h4>What can you sell on Zilingo?</h4>
+                    <h5>Zilingo is a fashion and lifestyle marketplace selling products from<br> Southeast Asia and China</h5>
+                
+            </div>
+            <!--row 1-->
+            <div class="sellImg">
+                <div class="row">
+                    <div class="col-md-3 col-sm-6 col-xs-6" style="background-image: url(./data/Clothing.png);">
+                        <p>
+                            Clothing
+                        </p>
+                    </div>
+
+                    <div class="col-md-3 col-sm-6 col-xs-6" style="background-image: url(./data/Bags.png);">
+                        <p>
+                            Bags
+                        </p>
+                    </div>
+
+                    <div class="col-md-3 col-sm-6 col-xs-6" style="background-image: url(./data/Shoes.png);">
+                        <p>
+                            Shoes
+                        </p>
+                    </div>
+
+                    <div class="col-md-3 col-sm-6 col-xs-6" style="background-image: url(./data/Jewellery.png);">
+                        <p>
+                            Jewellery
+                        </p>
+                    </div>
+                </div>
+                <!--row 2-->
+                <div class="row">
+                    <div class="col-md-3 col-sm-6 col-xs-6" style="background-image: url(./data/Accessories.png);">
+                        <p>
+                            Accessories
+                        </p>
+                    </div>
+
+                    <div class="col-md-3 col-sm-6 col-xs-6" style="background-image: url(./data/Watches.png);">
+                        <p>
+                            Watches
+                        </p>
+                    </div>
+
+                    <div class="col-md-3 col-sm-6 col-xs-6" style="background-image: url(./data/Baby.png);">
+                        <p>
+                            Baby & Kids
+                        </p>
+                    </div>
+
+                    <div class="col-md-3 col-sm-6 col-xs-6" style="background-image: url(./data/Skin.png);">
+                        <p>
+                            Skin Care
+                        </p>
+                    </div>
+                </div>
+                <!--row 3-->
+                <div class="row">
+                    <div class="col-md-3 col-sm-6 col-xs-6" style="background-image: url(./data/Bath.png);">
+                        <p>
+                            Bath & Body
+                        </p>
+                    </div>
+
+                    <div class="col-md-3 col-sm-6 col-xs-6" style="background-image: url(./data/Makeup.png);">
+                        <p>
+                            Makeup
+                        </p>
+                    </div>
+
+                    <div class="col-md-3 col-sm-6 col-xs-6" style="background-image: url(./data/Electronics.png);">
+                        <p>
+                            Electronics
+                        </p>
+                    </div>
+
+                    <div class="col-md-3 col-sm-6 col-xs-6" style="background-image: url(./data/Home.png);">
+                        <p>
+                            Home
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row" id="Selling-start">
+                <a href="https://sellers.zilingo.com/onboarding/seller/type">
+                    <b>Start Selling</b>
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <div class="adver">
+        <!--advertisements-->
+        <div class="container-fluid">
+            <div class="row">
+                <!--Title-->
+                <div class="col-sm-12">
+                    <p>Get special incentives and offers if<br> you sign up this month</p>
+                    <p id="p_zi">ZILINGO powers fashion and <br>lifestyle entrepreneurs all <br>over Asia</p>
+                </div>
+            </div>
+
+            <!--statistical-->
+            <div class="row">
+                <div class="col-sm-4 col-xs-4">
+                    <div class="colL">
+                        <p>
+                        <strong>10,000</strong>
+                        <br>
+                        Sellers
+                    </p>
+                    </div>
+                    
+                </div>
+
+                <div class="col-sm-4 col-xs-4">
+                    <div>
+                        <p>
+                        <strong>7,000,000</strong> 
+                        <br>
+                            Active buyers
+                        </p>
+                    </div>
+                </div>
+
+                <div class="col-sm-4 col-xs-4">
+                    <div class="colR">
+                        <p>
+                        <strong>20%</strong>
+                        <br>
+                        Growth every month
+                    </p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="start">
+                    <a href="https://sellers.zilingo.com/onboarding/seller/type">
+                        <b>Start Selling</b>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!--FAQ-->
+    <div class="FAQ" id="FAQ">
+        <div class="container">
+            <!--title-->
+            <div class="row">
+                <div class="col-sm-12">
+                    <p>Frequently Asked Questions</p>
+                </div> 
+            </div>
+            <!--Paragraph-->
+            <div class="row">
+                <div class="col-sm-6" id="FAQ_left">
+                    <p style="font-size: 18px;font-weight: 600;">What fees do I get charged?</p>
+                    <p>
+                        Listing your products on Zilingo is always<br id="brR"> free. Based on<br id="brN">
+                        product categories, we do<br id="brR"> charge a commission - from 10% to<br id="brN">
+                        20% - on <br id="brR">the value of orders placed on Zilingo. Also,<br id="brR"> sellers<br id="brN">
+                        pay pick-up and delivery charges for <br id="brR">every order. These<br id="brN">
+                        charges are determined<br id="brR">by our logistics partners on the basis<br id="brN">
+                        of<br id="brR"> weight, size, and destination.<br id="brN">
+
+
+                    </p>
+                </div>
+
+                <div class="col-sm-6" id="FAQ_right">
+                    <p style="font-size: 18px; font-weight: 600;">How do I stand out on Zilingo?</p>
+                    <p>
+                        Its pretty simple. Follow these 5 cardinal<br id="brR"> rules:<br id="brN"><br id="brR">
+                        #1 Sell products that people want (AKA you<br id="brR"> need to follow<br id="brN">
+                        trends)<br id="brN"><br id="brR">
+                        #2 Good price vs. quality beats all<br id="brN"><br id="brR">
+                        #3 God-like images<br id="brN"><br id="brR">
+                        #4 Detailed and accurate names<br id="brN"><br id="brR">
+                        #5 Lots of descriptions<br id="brN"><br id="brR">
+
+
+                    </p>
+                </div>
+            </div>
+            <div class="row">
+               
+
+                <div class="col-sm-6" id="FAQ_left">
+                    <p style="font-size: 18px; font-weight: 600;">How do I create a store on Zilingo</p>
+                    <p>
+                        All you need is to create an account and add<br id="brR"> at least 5 SKUs.<br id="brN">
+                        Once we confirm the details<br id="brR"> are in order, you can start selling!<br id="brN">
+                      
+
+                    </p>
+                </div>
+
+                <div class="col-sm-6" id="FAQ_right2">
+                    <p style="font-size: 18px;font-weight: 600;">How do I get paid?</p>
+                    <p>
+                        All payments are made to a bank account<br id="brR"> specified by you.<br id="brN">
+                        Payment details are<br id="brR"> collected during the onboarding process.<br id="brN">
+                        
+
+
+                    </p>
+                </div>
+
+               
+            </div>
+        </div>
+
+
+    </div>
+    <!--Ftiler-->
+    <div id="filter">
+        <div class="container-fluid">
+                <div class="row">
+                   <!--Filter left-->
+                    <div class="col-sm-3 col-xs-6">
+                         <!--filter icon-->
+                        <a href="#headPage">
+                            <img src="https://sellers.zilingo.com/assets/images/icons/2-zilingo-seller-logo.svg" alt="Logo">
+                        </a>
+                    </div>
+                        <!--address-->
+                    <div class="col-sm-3 col-xs-6">
+                        <p>
+                            Zilingo Pte Ltd<br>
+                            Duo Tower, 3 Fraser<br id="fbr"> street<br>
+                            #15-24/25, <br id="fbr">Singapore - 189352
+                        </p>
+                        
+                    </div>
+                    <!--Filter right-->
+                    <div class="col-sm-6 col-xs-12">
+                        <p>Welcome to Zilingo<br>
+                            Zilingo is the hottest new fashion & lifestyle marketplace in Singapore, Indonesia & Thailand.<br>
+                            Discover what's trending, shop from thousands of sellers, millions of items, upcoming indie labels and the hippest fashion<br id="fbr1">
+                            designers. Have it all delivered to your doorstep!<br>
+                            And don't forget to always #StayInTrend<br>
+                            © Copyright Zilingo 2018</p>
+                             
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div> <!--end SuperDrop-->
+     
+    
+    
+    <!--Jquery,js-->
+ 
+    
+    <script src="js/main.js"></script>
+   
+</body>
+</html>

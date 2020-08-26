@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <!--title name-->
+  <title>Zilingo Seller Center</title>
+  <!--Logo title-->
+  <link rel="shortcut icon" type="image/png" href="./images/title_new.png"/>
+
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="plugins/bootstrap/bootstrap.min.css">
+  <!--CSS-->
+  <link rel="stylesheet" href="css/styles.css">
+
+</head>
+<body id="register">
+
+<!--Menu-->
+    <div class="container-fluid" id="menu">
+      <div class="row">
+        <!--Logo menu-->
+        <div class="col-xs-4">
+          <img src="https://sellers.zilingo.com/assets/images/icons/c1e236430622f34f4d9d267e54b5f4a6-2-zilingo-seller-logo.svg" alt="Logo" href="https://sellers.zilingo.com/">         
+        </div>
+
+        <div class="col-xs-4" id="menu-mid">
+          <!--icon-->
+          <div class="col-xs-2" id="rowSeller">
+            <div class="row1">
+
+            </div>
+
+            <div class="row2">
+              <p>Seller type</p>
+            </div>
+          </div>
+
+          <!--line-->
+          <div class="col-xs-1">
+            <span></span>
+          </div>
+
+          <!--icon-->
+          <div class="col-xs-2" id="rowContact">
+            <div class="row1">
+
+            </div>
+
+            <div class="row2">
+              <p>Contact</p>
+            </div>
+          </div>
+
+           <!--line-->
+          <div class="col-xs-1">
+            <span></span>
+          </div>
+
+          <!--icon-->
+          <div class="col-xs-2" id="rowStore">
+            <div class="row1">
+
+            </div>
+
+            <div class="row2">
+              <p>Store</p>
+            </div>
+          </div>
+
+           <!--line-->
+          <div class="col-xs-1">
+            <span></span>
+          </div>
+
+          <!--icon-->
+          <div class="col-xs-2" id="rowTerms">
+            <div class="row1">
+
+            </div>
+
+            <div class="row2">
+              <p>Terms</p>
+            </div>
+          </div>
+        </div>
+        <!-- Menu right-->
+        <!--don't have account?-->
+        <div class="col-xs-3">
+          <p>
+            Already selling on Zilingo?
+          </p>
+        </div>
+        
+        <!--Sign up-->
+        <div class="col-xs-1">
+          <a href= "https://sellers.zilingo.com/onboarding/seller/type">
+              Log in
+          </a>
+        </div>
+      </div>
+    </div>
+<!--board-->
+    <div class="container-fluid" id="re">
+        <div class="row">
+            <p id="wel">Welcome to Zilingo Seller Center</p>
+            <p> Select a platform to sell your products</p>
+        </div>
+
+<!--main board-->
+        <div class="row" id="board">
+            
+          
+          <form id="formRe0">
+            <!--Zilingo Shopping-->
+            
+              <label class="col-lg-6 col-xs-12 shopping">
+                <div class="col-xs-12">
+                  <input checked="checked" type="radio" id="shopping" name="zilingo" value="shopping" onclick="check_in('shopping')">
+                    <label for="shopping">                    
+                          <span>Sell on Zilingo Shopping</span>
+                    </label>
+                </div>
+            
+                <div class="mid">
+                  <img src="https://sellers.zilingo.com/assets/images/logos/zilingo_shopping.svg" alt="zilingo_shopping">
+                  <p>Sell to consumers on zilingoshopping.com (B2C)</p>
+
+                </div>
+                
+              </label>
+            
+            <!--Zilingo Trade-->
+          
+            <label class="col-lg-6 col-xs-12 trade">
+              <div class="col-xs-12">
+                <input type="radio" id="trade" name="zilingo" value="trade" onclick="check_in('trade')">
+                <label for="trade">
+                    <span>Sell on Zilingo Trade</span>
+                </label>
+              </div>
+              <div class="mid">
+                <img src="https://sellers.zilingo.com/assets/images/logos/zilingo_trade.svg" alt="zilingo_trade">
+                <p>Sell in bulk to businesses on zilingotrade.com (B2B)</p>
+              </div>
+            </label>
+            
+          
+            <button type="Submit" value="Submit">
+              Next
+            </button>
+            
+          </form>
+           
+          
+        </div>
+        
+        
+    </div>
+    
+    
+
+
+
+  <!--Jquery,js-->
+   <script type="text/javascript" src="plugins/jquery/jquery.min.js"></script>
+    <script type="text/javascript" src="plugins/bootstrap/bootstrap.min.js"></script>
+   
+    <script src="js/main.js"></script>
+
+</body>
+</html>    

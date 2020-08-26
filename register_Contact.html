@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <!--title name-->
+  <title>Zilingo Seller Center</title>
+  <!--Logo title-->
+  <link rel="shortcut icon" type="image/png" href="./images/title_new.png"/>
+
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="plugins/bootstrap/bootstrap.min.css">
+  <!--CSS-->
+  <link rel="stylesheet" href="css/styles.css">
+
+</head>
+<body id="register">
+
+    <!--Menu-->
+    <div class="container-fluid" id="menu">
+      <div class=row>
+        <!--Logo menu-->
+        <div class="col-xs-4">
+                     
+          <img src="https://sellers.zilingo.com/assets/images/icons/c1e236430622f34f4d9d267e54b5f4a6-2-zilingo-seller-logo.svg" alt="Logo" href="https://sellers.zilingo.com/">     
+            
+        </div>
+
+
+        <div class="col-xs-4" id="menu-mid">
+          <!--icon-->
+          <div class="col-xs-2" id="rowSeller">
+            <div class="row1">
+
+            </div>
+
+            <div class="row2">
+              <p>Seller type</p>
+            </div>
+          </div>
+
+          <!--line-->
+          <div class="col-xs-1">
+            <span></span>
+          </div>
+
+          <!--icon-->
+          <div class="col-xs-2" id="rowContact" style="opacity: 1;">
+            <div class="row1">
+
+            </div>
+
+            <div class="row2">
+              <p>Contact</p>
+            </div>
+          </div>
+
+           <!--line-->
+          <div class="col-xs-1">
+            <span></span>
+          </div>
+
+          <!--icon-->
+          <div class="col-xs-2" id="rowStore">
+            <div class="row1">
+
+            </div>
+
+            <div class="row2">
+              <p>Store</p>
+            </div>
+          </div>
+
+           <!--line-->
+          <div class="col-xs-1">
+            <span></span>
+          </div>
+
+          <!--icon-->
+          <div class="col-xs-2" id="rowTerms">
+            <div class="row1">
+
+            </div>
+
+            <div class="row2">
+              <p>Terms</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Menu right-->
+        <!--don't have account?-->
+        <div class="col-xs-3">
+          <p>
+            Already selling on Zilingo?
+          </p>
+        </div>
+        
+        <!--Sign up-->
+        <div class="col-xs-1">
+
+          <a href= https://sellers.zilingo.com/onboarding/seller/type>
+            <p>Login</p>
+          </a>
+        </div><!---->
+      </div>
+    </div>
+    
+
+    <div class="container-fluid" id="re">
+        <div class="row">
+          <p id="wel">Contact Details</p>
+          <p>To get in touch with you and keep you updated</p>
+        </div>
+        
+        <div class="row" id="per">
+            
+          
+          <form name="Personal_form" action="">
+
+            <div class="input_anime">
+              <input type="text" id="fullname" name="fullname" required>
+              <label>Full Name</label>
+              <p id="pName">Invalid Full Name</p>
+            </div>
+
+            <div class="input_anime">
+              <input type="text" id="email" name="email" onblur="check_email()" onkeyup="check_email()" required>
+              <label>Email Address</label>
+              <p id="pEmailRequired">Email is required</p>
+              <p id="pEmailInvalid">The Email is invalid. Please check the value entered</p>
+            </div>
+
+            <div class="input_anime">
+              <input type="password" id="pass" name="pass" required>
+              <label>Password</label>
+              <p id="pPass">Password is too short</p>
+            </div>
+
+            <div class="input_anime">
+              <input type="password" id="Cfpass" name="Cfpass" required>
+              <label>Confirm Password</label>
+              <p id="pCf">Password and Confirm Password do not match</p>
+            </div>
+
+            <div class="input_anime">
+              <input type="text" id="PCN" name="PCN" required>
+              <label>Personal Contact Number</label>
+              <p id="pPCN">Invalid Personal Contact Number</p>
+            </div>
+
+            <div class="input_anime">
+              <input type="text" id="RC" name="RC" required>
+              <label>Referral Code (Optional)</label>
+            </div>
+            <button type="submit" value="Submit" onclick="return checkPer()">
+                Next
+            </button>
+            
+           
+            
+          </form>
+           
+          
+        </div>
+        
+        
+    </div>
+
+    
+
+
+
+  <!--Jquery,js-->
+  <script type="text/javascript" src="plugins/jquery/jquery.min.js"></script>
+    <script type="text/javascript" src="plugins/bootstrap/bootstrap.min.js"></script>
+    
+    <script src="js/main.js"></script>
+
+</body>
+</html>    
