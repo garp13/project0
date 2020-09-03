@@ -1193,6 +1193,9 @@ INDEX
 #register #menu .row .col-xs-4 #rowTerms .row1{
     background-position: -203px -403px;
 }
+#register #menu .row .col-xs-4 #rowTerms{
+    margin-right: 0;
+}
 #register #menu .row .col-xs-4 .col-xs-2 .row2{
     padding: 0px;
     margin:auto;
